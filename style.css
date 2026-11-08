@@ -1,0 +1,284 @@
+* { 
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f7f8;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.phone {
+  max-width: 400px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 18px 18px 104px;
+  background: #fff;
+  border-left: 1px solid #e6e9ed;
+  border-right: 1px solid #e6e9ed;
+  position: relative;
+}
+
+
+.location-label {
+  color: #667387;
+  font-size: 11px;
+  letter-spacing: .4px;
+  margin: 0 0 4px;
+}
+
+.location-address {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.location-address .arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #f4f6f9;
+  border: 1px solid #e4e9ef;
+  border-radius: 10px;
+  margin-top: 14px;
+  padding: 0 13px;
+  min-height: 44px;
+}
+
+.search-wrap span {
+  font-size: 18px;
+}
+
+.search-wrap input {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #172033;
+  font: inherit;
+  font-size: 12px;
+}
+
+.search-wrap input::placeholder {
+  color: #8997a8;
+  opacity: 1;
+}
+
+
+.promo {
+  background: linear-gradient(135deg, #047857, #34d399);
+  border-radius: 15px;
+  color: #fff;
+  padding: 18px;
+  margin-top: 14px;
+  min-height: 112px;
+}
+
+.promo h1 {
+  font-size: 17px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.promo p {
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+.coupon {
+  display: inline-block;
+  background: white;
+  border-radius: 6px;
+  color: #0f766e;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: .4px;
+  padding: 7px 12px;
+  min-width: 165px;
+}
+
+
+section h2 {
+  margin: 9px 0 10px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 64px;
+  padding: 9px 3px;
+  background: #f8f9fb;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.category .emoji {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.category .name {
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+.store {
+  overflow: hidden;
+  border: 1px solid #e3e8ed;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+
+.store-cover {
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  background: #a7f3d0;
+}
+
+.store-info {
+  padding: 10px 13px 15px;
+}
+
+.store-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.store-heading h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.rating {
+  flex-shrink: 0;
+  background: #13854a;
+  color: white;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+}
+
+.store-description {
+  margin: 5px 0 4px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.delivery {
+  margin: 0;
+  color: #0f766e;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.version {
+  position: absolute;
+  bottom: 83px;
+  left: 0;
+  right: 0;
+  color: #9aa7b9;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  padding: 9px 5px 10px;
+  background: #fff;
+  border: 1px solid #e8ebf0;
+  border-bottom: 0;
+  z-index: 10;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-height: 43px;
+  justify-content: center;
+  text-decoration: none;
+  color: #9aa5b5;
+  font-size: 10px;
+}
+
+.bottom-nav .nav-icon {
+  font-size: 19px;
+}
+
+.bottom-nav a.active {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+
+@media (min-width: 420px) {
+  .phone {
+    min-height: 700px;
+    border: 1px solid #e0e5ea;
+    border-radius: 24px 24px 0 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .phone {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .categories {
+    gap: 5px;
+  }
+
+  .category .name {
+    font-size: 9px;
+  }
+}
